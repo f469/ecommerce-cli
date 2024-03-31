@@ -4,11 +4,12 @@ import {CommonModule} from "@angular/common";
 import {ProductComponent} from "../product/product.component";
 import {ProductListApiServiceService} from "./product-list-api-service.service";
 import {ProductApiServiceService} from "../product/Service/product-api-service.service";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [CommonModule, ProductComponent],
+  imports: [CommonModule, ProductComponent, RouterOutlet, RouterLink],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.scss'
 })
