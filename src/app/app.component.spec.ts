@@ -1,7 +1,5 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import {provideRouter} from "@angular/router";
-import {routes} from "./app.routes";
 import {provideHttpClient} from "@angular/common/http";
 
 describe('AppComponent', () => {

@@ -25,7 +25,7 @@ export class ProductListComponent {
   private get(): void {
     this.httpClientList.getProductCollection().subscribe((data) => {
       const members = data["hydra:member"];
-      for (let member of members) {
+      for (const member of members) {
         this.httpClientProduct.getProduct(member.id).subscribe((data) => {
           this.products.push(data);
         });

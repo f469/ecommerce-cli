@@ -4,6 +4,7 @@
   "cli": {
     "packageManager": "npm",
     "schematicCollections": [
+      "@angular-eslint/schematics",
       "@cypress/schematic",
       "@schematics/angular"
     ]
@@ -145,6 +146,15 @@
             "production": {
               "devServerTarget": "ecommerce-cli:serve:production"
             }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }

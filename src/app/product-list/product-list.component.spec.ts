@@ -1,9 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductListComponent } from './product-list.component';
-import {provideRouter} from "@angular/router";
-import {routes} from "../app.routes";
-import {provideHttpClient} from "@angular/common/http";
+import { provideHttpClient } from "@angular/common/http";
 
 describe('ProductListComponent', () => {
   let component: ProductListComponent;

@@ -10,7 +10,7 @@ export class ProductApiServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getProduct(id: string): Observable<any> {
+  public getProduct(id: string): Observable<Product> {
     return this.httpClient.get<Product>(`http://localhost/api/products/${id}`);
   }
 }
